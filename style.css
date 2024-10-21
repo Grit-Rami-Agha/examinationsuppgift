@@ -22,6 +22,9 @@ h1, h2, p, .contact-info p {
   display: flex;
   align-items: center;
 }
+.navbar .nav-list active {
+  display: none;
+}
 .navbar .hamburger {
   display: none;
   background: none;
@@ -324,6 +327,12 @@ footer {
     flex-direction: column;
     margin-top: 60px;
   }
+  .nav-list active {
+    display: flex;
+  }
+  .logo-nav-dis {
+    display: none;
+  }
   ul.active {
     display: none;
   }
@@ -357,5 +366,17 @@ footer {
   }
   .contact-info {
     height: 110%;
+  }
+  .social-image {
+    padding: 0;
+    display: block;
+    justify-content: space-around;
+  }
+  .social-text {
+    margin-right: 1rem;
+    font-size: smaller;
+  }
+  .social {
+    width: 90%;
   }
 }
