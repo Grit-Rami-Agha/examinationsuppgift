@@ -1,0 +1,14 @@
+{
+  "name": "examinationsuppgift",
+  "version": "1.0.0",
+  "main": "javascript.js",
+  "scripts": {
+      "compile" : "sass --watch --no-source-map styles.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.80.3"
+  }
+}

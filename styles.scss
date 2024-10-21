@@ -1,0 +1,411 @@
+// Variables
+$color-bg-purple: #A53DFF;
+$color-hover-purple: #9940E6;
+$box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+$input-hover-bg: #e0e0e0;
+$contact-bg: #fff;
+$border-radius: 0.5rem;
+
+// Reset & Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: black;
+  min-height: fit-content;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+h1, h2, p, .contact-info p {
+  color: black;
+}
+
+// Navbar Styling
+.navbar {
+  display: flex;
+  align-items: center;
+
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: $color-bg-purple;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 50px;
+    margin-left: 10px;
+    z-index: 1000;
+  }
+
+  ul {
+    z-index: 2;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: $box-shadow;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      float: right;
+
+      a {
+        display: block;
+        color: black;
+        text-align: end;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: sticky;
+
+        &:hover {
+          box-shadow: $box-shadow;
+          transform: scale(1.01);
+          transition: transform 0.1s;
+        }
+      }
+      .logo-nav-dis{
+        background-color: $color-bg-purple;
+      }
+
+      &.active a {
+        color: black;
+        min-height: 100%;
+        box-shadow: $box-shadow;
+      }
+    }
+  }
+}
+
+.hamburger button {
+  display: none;
+  
+  &:hover {
+    color: black;
+    min-height: 100%;
+    background-color: $color-bg-purple;
+    box-shadow: $box-shadow;
+    transition: background-color 0.3s, color 0.5s;
+  }
+}
+
+li a:hover:not(.active) {
+  color: black;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+// Intro Section
+.intro-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.exp-container {
+  display: flex;
+}
+
+.exp {
+  background-color: #EDD8FF;
+  margin: 0.5rem;
+  max-width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-main {
+  margin-top: 0rem;
+}
+
+.into-main {
+  flex: 1;
+}
+
+.pro-intro-img {
+  width: 80%;
+  border-radius: 1rem;
+  box-shadow: $box-shadow;
+}
+
+h1 {
+  padding: 1rem;
+  color: black;
+}
+
+p {
+  padding: 0.5rem 0;
+  color: black;
+}
+
+.exp-cont {
+  display: flex;
+  padding: 1rem;
+}
+
+.exp {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: $box-shadow;
+}
+
+// Buttons
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background-color: $color-bg-purple;
+  color: black;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: $color-hover-purple;
+    transition: transform 0.3s;
+  }
+}
+
+// Social Section
+.social {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  .social-image {
+    margin-left: 5rem;
+
+    p {
+      margin-left: 2.5rem;
+    }
+  }
+
+  .social-intro-img {
+    margin-top: 2.5rem;
+    width: 75%;
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    max-width: 185px;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: $box-shadow;
+
+    .incon-image {
+      width: 20px;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.8s;
+      }
+    }
+  }
+}
+
+// Portfolio Section
+.portfolio {
+  margin: 2.5rem;
+}
+
+.port-text {
+  text-align: center;
+}
+
+.ptext {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+// Project Cards
+.indproject-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: solid 1px f5f5f5;
+  width: 100%;
+  max-width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  max-width: fit-content;
+  box-shadow: $box-shadow;
+
+  .card-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+  }
+
+  .card-info {
+    color: black;
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: $box-shadow;
+  }
+}
+
+.info-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 100%;
+  }
+
+// Info Form Styling
+.contact-form {
+  max-width: 35rem;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.625rem;
+    background-color: $color-bg-purple;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-hover-purple;
+    }
+  }
+}
+
+.contact-info {
+  height: 10rem;
+  max-width: 35rem;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+
+  h2 {
+    float: right;
+    margin-top: 0.75rem;
+  }
+
+  p {
+    float: none;
+    margin-top: 0.5rem;
+    max-width: 17.5;
+  }
+}
+
+// Footer
+footer {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0.0125rem 0.425rem rgba(0, 0, 0, 0.1);
+}
+
+// Media Queries
+@media screen and (max-width: 600px) {
+    
+    .navbar .hamburger {
+        display: block;
+    }
+    ul {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    ul.active {
+        display: none;
+    }
+    li {
+
+        width: 100%;
+    }
+
+    .pro-intro-img {
+    display: none;
+    }
+    .incon-image {
+        width: 15px;
+    }
+    .social-icons {
+        width: 100px;
+    }
+
+    .info-wrapper {
+        display: flex;
+        justify-content: space-between;
+        overflow: scroll;
+        max-height: fit-content;
+    }
+
+    .indproject-card {
+        min-height: fit-content;
+        min-width: 16rem;
+    }
+
+    .port-text {
+        font-size: smaller;
+    }
+    .project-cards {
+        width: 16rem;
+    }
+
+    .contact-info{
+        height: 110%;
+    }
+}
