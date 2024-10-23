@@ -215,7 +215,15 @@ button:hover {
   transition: transform 0.8s;
 }
 
-div.scroll-container {
+.image-gallery {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-container {
+  display: flex;
+  justify-content: start;
   background-color: #9940E6;
   overflow-y: scroll;
   white-space: nowrap;
@@ -224,11 +232,11 @@ div.scroll-container {
   margin: 5rem;
   max-width: 90%;
 }
-div.scroll-container div.scroll-container img {
+.scroll-container div.scroll-container img {
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
-  min-width: 5rem;
+  max-width: 10%;
 }
 
 .portfolio {

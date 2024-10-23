@@ -247,7 +247,14 @@ button {
 }
 
 //Image gallery
-div.scroll-container {
+.image-gallery{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.scroll-container {
+  display: flex;
+  justify-content: start;
   background-color: $color-hover-purple;
   overflow-y: scroll;
   white-space: nowrap;
@@ -260,7 +267,7 @@ div.scroll-container {
     border-radius: 0.5rem;
     padding: 1rem;
     box-shadow: $box-shadow;
-    min-width: 5rem;
+    max-width: 10%;
   }
   
 }
