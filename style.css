@@ -18,6 +18,12 @@ h1, h2, p, .contact-info p {
   color: black;
 }
 
+.nav-list li a.active {
+  background-color: #A53DFF; /* Highlight color */
+  color: #000; /* Text color */
+  font-weight: bold; /* Make it stand out */
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -68,9 +74,6 @@ h1, h2, p, .contact-info p {
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
   transform: scale(1.01);
   transition: transform 0.1s;
-}
-.navbar ul li .logo-nav-dis {
-  background-color: #A53DFF;
 }
 .navbar ul li.active a {
   color: black;
@@ -329,9 +332,6 @@ footer {
   }
   .nav-list active {
     display: flex;
-  }
-  .logo-nav-dis {
-    display: none;
   }
   ul.active {
     display: none;

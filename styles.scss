@@ -27,6 +27,12 @@ h1, h2, p, .contact-info p {
   color: black;
 }
 
+.nav-list li a.active {
+  background-color: $color-bg-purple; /* Highlight color */
+  color: #000; /* Text color */
+  font-weight: bold; /* Make it stand out */
+}
+
 // Navbar Styling
 .navbar {
   display: flex;
@@ -82,9 +88,7 @@ h1, h2, p, .contact-info p {
           transition: transform 0.1s;
         }
       }
-      .logo-nav-dis{
-        background-color: $color-bg-purple;
-      }
+
 
       &.active a {
         color: black;
@@ -373,9 +377,6 @@ footer {
     }
     .nav-list active{
       display: flex;
-    }
-    .logo-nav-dis{
-      display: none;
     }
     ul.active {
         display: none;
