@@ -25,18 +25,18 @@ h1, h2, p, .contact-info p {
   margin-top: 5rem;
 }
 
-.nav-list li a.active {
-  background-color: #A53DFF; /* Highlight color */
-  color: #000; /* Text color */
-  font-weight: bold; /* Make it stand out */
-}
-
 .navbar {
   display: flex;
   align-items: center;
 }
+.navbar .nav-list li a.active {
+  background-color: #A53DFF;
+  color: #000;
+  font-weight: bold;
+}
 .navbar .nav-list active {
   display: none;
+  background-color: #A53DFF;
 }
 .navbar .hamburger {
   display: none;
@@ -83,6 +83,7 @@ h1, h2, p, .contact-info p {
   transition: transform 0.1s;
 }
 .navbar ul li.active a {
+  background-color: #A53DFF;
   color: black;
   min-height: 100%;
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);

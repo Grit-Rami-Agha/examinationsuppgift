@@ -36,19 +36,20 @@ h1, h2, p, .contact-info p {
   margin-top: 5rem;
 }
 
-.nav-list li a.active {
-  background-color: $color-bg-purple; /* Highlight color */
-  color: #000; /* Text color */
-  font-weight: bold; /* Make it stand out */
-}
-
 // Navbar Styling
 .navbar {
   display: flex;
   align-items: center;
 
+  .nav-list li a.active {
+    background-color: $color-bg-purple;
+    color: #000;
+    font-weight: bold;
+  }
+
   .nav-list active{
     display: none;
+    background-color: $color-bg-purple;
   }
 
   .hamburger {
@@ -100,6 +101,7 @@ h1, h2, p, .contact-info p {
 
 
       &.active a {
+        background-color: $color-bg-purple;
         color: black;
         min-height: 100%;
         box-shadow: $box-shadow;

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.split("/").pop();
     const navLinks = document.querySelectorAll('.nav-list li a');
 
     navLinks.forEach(link => {
